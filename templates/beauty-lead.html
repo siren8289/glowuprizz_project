@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>가을 뷰티 루틴 신청</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fdf6f3; color: #3e2a2e; font-family: Arial, "Apple SD Gothic Neo", sans-serif; }
+    main { width: min(100%, 680px); margin: 0 auto; padding: 48px 20px; }
+    .tag { display: inline-block; padding: 7px 11px; border-radius: 999px; background: #f5dfe1; color: #9c4f5c; font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+    h1 { margin: 18px 0 12px; font-size: clamp(34px, 8vw, 54px); line-height: 1.1; }
+    .intro { color: #7d6267; font-size: 17px; line-height: 1.65; }
+    .routine { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 28px 0; }
+    .routine div { min-height: 112px; padding: 17px; border-radius: 16px; background: #fff; border: 1px solid #f0dddf; }
+    .routine b, .routine span { display: block; }
+    .routine b { color: #b35a69; font-size: 13px; }
+    .routine span { margin-top: 11px; font-size: 15px; font-weight: 700; line-height: 1.35; }
+    form { padding: 28px; background: #fff; border: 1px solid #f0dddf; border-radius: 18px; box-shadow: 0 12px 30px #9d596414; }
+    h2 { margin: 0 0 7px; font-size: 21px; }
+    form p { margin: 0; color: #80666b; font-size: 14px; }
+    label { display: block; margin-top: 16px; color: #62474d; font-size: 14px; font-weight: 700; }
+    input { width: 100%; margin-top: 7px; padding: 14px; border: 1px solid #e5cfd2; border-radius: 9px; color: #3e2a2e; font: inherit; }
+    input:focus { outline: 2px solid #e9aeba; border-color: #bc6877; }
+    button { width: 100%; margin-top: 22px; padding: 15px; border: 0; border-radius: 9px; background: #a74f60; color: #fff; font: 700 16px inherit; cursor: pointer; }
+    small { display: block; margin-top: 14px; color: #927b7f; font-size: 12px; }
+    @media (max-width: 440px) { .routine { grid-template-columns: 1fr; } .routine div { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">AUTUMN BEAUTY ROUTINE</div>
+    <h1>계절이 바뀌면<br>루틴도 달라져야 해요.</h1>
+    <p class="intro">내 피부 컨디션과 생활 패턴에 맞춘 가을 뷰티 루틴을 확인해 보세요.</p>
+    <section class="routine" aria-label="뷰티 루틴 구성">
+      <div><b>STEP 01</b><span>피부 상태<br>체크하기</span></div>
+      <div><b>STEP 02</b><span>루틴<br>정리하기</span></div>
+      <div><b>STEP 03</b><span>꾸준히<br>실천하기</span></div>
+    </section>
+    <form>
+      <h2>퍼스널 뷰티 루틴 신청</h2>
+      <p>신청하신 분께 맞춤 루틴 안내를 보내드립니다.</p>
+      <label>이름<input name="name" autocomplete="name" required></label>
+      <label>이메일<input name="email" type="email" autocomplete="email" required></label>
+      <button type="submit">나의 뷰티 루틴 받기</button>
+      <small>입력하신 정보는 루틴 안내 목적으로만 사용됩니다.</small>
+    </form>
+  </main>
+</body>
+</html>

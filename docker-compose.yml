@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-lead_magnet}
+      POSTGRES_USER: ${POSTGRES_USER:-lead_magnet}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lead_magnet}
+    ports:
+      - "5433:5432"
+    volumes:
+      - lead-magnet-db:/var/lib/postgresql/data
+volumes:
+  lead-magnet-db:

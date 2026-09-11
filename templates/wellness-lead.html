@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9월 웰니스 가이드 신청</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f4f7f2; color: #18362b; font-family: Arial, "Apple SD Gothic Neo", sans-serif; }
+    main { width: min(100%, 680px); margin: 0 auto; padding: 48px 20px; }
+    .eyebrow { color: #43865c; font-size: 13px; font-weight: 700; letter-spacing: .08em; }
+    h1 { margin: 14px 0; font-size: clamp(32px, 8vw, 52px); line-height: 1.12; }
+    .intro { color: #597067; font-size: 17px; line-height: 1.65; }
+    .benefits, form { background: #fff; border: 1px solid #dfe8e1; border-radius: 18px; padding: 26px; margin-top: 28px; }
+    .benefits h2, form h2 { margin: 0 0 16px; font-size: 19px; }
+    ul { margin: 0; padding-left: 20px; color: #486258; line-height: 2; }
+    label { display: block; margin-top: 16px; color: #365247; font-size: 14px; font-weight: 700; }
+    input { width: 100%; margin-top: 7px; padding: 14px; border: 1px solid #cbdad0; border-radius: 9px; color: #18362b; font: inherit; }
+    input:focus { outline: 2px solid #78aa87; border-color: #43865c; }
+    button { width: 100%; margin-top: 22px; padding: 15px; border: 0; border-radius: 9px; background: #24734a; color: #fff; font: 700 16px inherit; cursor: pointer; }
+    small { display: block; margin-top: 14px; color: #718179; font-size: 12px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">SEPTEMBER WELLNESS GUIDE</div>
+    <h1>나에게 맞는<br>웰니스 루틴을 시작하세요.</h1>
+    <p class="intro">바쁜 일상에서도 꾸준히 실천할 수 있는 7일 웰니스 가이드를 무료로 보내드립니다.</p>
+    <section class="benefits">
+      <h2>가이드에 담긴 내용</h2>
+      <ul>
+        <li>아침과 저녁을 위한 10분 루틴</li>
+        <li>에너지 관리를 위한 식사 체크리스트</li>
+        <li>나만의 습관을 만드는 기록 페이지</li>
+      </ul>
+    </section>
+    <form>
+      <h2>무료 가이드 받기</h2>
+      <label>이름<input name="name" autocomplete="name" required></label>
+      <label>이메일<input name="email" type="email" autocomplete="email" required></label>
+      <button type="submit">웰니스 가이드 신청하기</button>
+      <small>신청 시 가이드 발송 및 관련 안내를 위해 연락처 정보를 이용합니다.</small>
+    </form>
+  </main>
+</body>
+</html>
